@@ -1,0 +1,4 @@
+Pastikan untuk mengganti 'localhost', 'username', 'password', dan 'nama_database' dengan informasi koneksi database yang sesuai. 
+Kode di atas adalah contoh dasar untuk pendaftaran dan login. 
+Anda dapat mengembangkan lebih lanjut sesuai dengan kebutuhan Anda, seperti menambahkan fitur validasi, 
+pesan kesalahan, dan tata letak yang lebih baik.
