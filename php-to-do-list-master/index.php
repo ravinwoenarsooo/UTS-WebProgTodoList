@@ -1,5 +1,10 @@
 <?php 
 require 'db_conn.php';
+session_start();
+if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated']) {
+    header("Location: login.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

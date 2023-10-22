@@ -17,17 +17,16 @@ if(isset($_POST['submit'])){
    $result = mysqli_query($conn, $select);
 
    if(mysqli_num_rows($result) > 0){
-
       $row = mysqli_fetch_array($result);
 
       if($row['user_type'] == 'admin'){
-
          $_SESSION['admin_name'] = $row['name'];
+         $_SESSION['user_authenticated'] = true;
          header('location:admin_page.php');
 
       }elseif($row['user_type'] == 'user'){
-
          $_SESSION['user_name'] = $row['name'];
+         $_SESSION['user_authenticated'] = true;
          header('location:user_page.php');
 
       }
