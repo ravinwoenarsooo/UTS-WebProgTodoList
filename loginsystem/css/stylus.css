@@ -1,5 +1,5 @@
 body {
-    background: #34495e;
+    background: crimson;
   }
   
   * {
@@ -43,7 +43,7 @@ body {
     margin: 0px auto;
     border: none;
     outline: none;
-    background: #0088FF;
+    background: crimson;
     color: #fff;
     font-family: sans-serif;
     font-size: 16px;

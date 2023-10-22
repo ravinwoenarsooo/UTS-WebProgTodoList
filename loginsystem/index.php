@@ -41,7 +41,7 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
             <?php if($todos->rowCount() <= 0){ ?>
                 <div class="todo-item">
                     <div class="empty">
-                        <img src="img/f.png" width="100%" />
+                        <img src="img/TDL.jpg" width="90%" />
                         <img src="img/Ellipsis.gif" width="80px">
                     </div>
                 </div>

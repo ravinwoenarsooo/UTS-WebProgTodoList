@@ -48,17 +48,25 @@
 }
 
 .container .content .btn{
-   display: inline-block;
+   position: relative;
    padding:10px 30px;
    font-size: 20px;
-   background: #333;
-   color:#fff;
+   background: crimson;
+   color:white;
    margin:0 5px;
+   transition: .4s ease-in;
+   z-index: 1;
+   border: 2px solid crimson;
    text-transform: capitalize;
+   border-radius: 12px;
 }
 
 .container .content .btn:hover{
-   background: crimson;
+   background:crimson;
+   box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
+   border: 2px solid crimson;
+   /* color: #ff96ad;
+   background-color: #17181c; */
 }
 
 .form-container{
