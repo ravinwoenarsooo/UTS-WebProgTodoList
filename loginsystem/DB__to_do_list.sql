@@ -1,4 +1,4 @@
-CREATE Database to_do_list
+CREATE Database to_do_list;
 USE to_do_list;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
