@@ -70,6 +70,10 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
        </div>
     </div>
 
+    <form action="user_page.php" method="get">
+    <button type="submit">Go to Home Page</button>
+    </form>
+
     <script src="js/jquery-3.2.1.min.js"></script>
 
     <script>

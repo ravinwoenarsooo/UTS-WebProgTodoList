@@ -143,3 +143,21 @@ body {
     text-align: center;
     color: #cccc;
   }
+
+  .home-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #258cd1;
+}
