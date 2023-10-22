@@ -16,6 +16,11 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
     <link rel="stylesheet" href="css/stylus.css">
 </head>
 <body>
+    <div class="home-button-container" id="home">
+    <form action="index.php" method="get">
+        <button class="home-button" type="submit">Go to Home Page</button>
+    </form>
+    </div>
     <div class="main-section">
        <div class="add-section">
           <form action="app/add.php" method="POST" autocomplete="off">
@@ -23,17 +28,18 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
                 <input type="text" 
                      name="title" 
                      style="border-color: #ff6666"
-                     placeholder="This field is required" />
+                     placeholder="Harus Isi To-do list" />
               <button type="submit">Add &nbsp; <span>&#43;</span></button>
 
              <?php }else{ ?>
               <input type="text" 
                      name="title" 
-                     placeholder="What do you need to do?" />
+                     placeholder="Apa yang ingin kamu lakukan?" />
               <button type="submit">Add &nbsp; <span>&#43;</span></button>
              <?php } ?>
           </form>
        </div>
+
        <?php 
           $todos = $conn->query("SELECT * FROM todos ORDER BY id DESC");
        ?>
@@ -69,10 +75,6 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
             <?php } ?>
        </div>
     </div>
-
-    <form action="user_page.php" method="get">
-    <button type="submit">Go to Home Page</button>
-    </form>
 
     <script src="js/jquery-3.2.1.min.js"></script>
 

@@ -144,20 +144,25 @@ body {
     color: #cccc;
   }
 
-  .home-button-container {
+   .home-button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .home-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: white;
+    color: crimson;
+    padding: 1px 200px;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
+    position: relative;
     cursor: pointer;
+    height: 50px;
+    transition: .4s ease-in;
 }
 
 .home-button:hover {
-    background-color: #258cd1;
-}
+    border: 2 px solid #ff96ad;
+    color: white;
+    background-color: crimson;
+} 
