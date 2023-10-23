@@ -27,8 +27,8 @@
 }
 
 .container .content h3 span{
-   background: crimson;
-   color:#fff;
+   background: #e0a558;
+   color: #fff;
    border-radius: 5px;
    padding:0 15px;
 }
@@ -39,7 +39,7 @@
 }
 
 .container .content h1 span{
-   color:crimson;
+   color:#e0a558;
 }
 
 .container .content p{
@@ -51,20 +51,20 @@
    position: relative;
    padding:10px 30px;
    font-size: 20px;
-   background: crimson;
+   background: #e0a558;
    color:white;
    margin:0 5px;
    transition: .4s ease-in;
    z-index: 1;
-   border: 2px solid crimson;
+   border: 2px solid #e0a558;
    text-transform: capitalize;
    border-radius: 12px;
 }
 
 .container .content .btn:hover{
-   background:crimson;
-   box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
-   border: 2px solid crimson;
+   background:#e0a558;
+   box-shadow: 0 0 5px #e0a558, 0 0 25px #e0a558, 0 0 50px #e0a558, 0 0 200px #e0a558;
+   border: 2px solid #e0a558;
    /* color: #ff96ad;
    background-color: #17181c; */
 }
@@ -110,16 +110,21 @@
 }
 
 .form-container form .form-btn{
-   background: #fbd0d9;
-   color:crimson;
+   background: #f7e3c8;
+   color:#e0a558;
    text-transform: capitalize;
    font-size: 20px;
    cursor: pointer;
+   transition: .4s ease-in;
 }
 
 .form-container form .form-btn:hover{
-   background: crimson;
-   color:#fff;
+   /* border: 2px solid #ff96ad;
+   color: #ff96ad;
+   background-color: #17181c; */
+   box-shadow: 10px 10px 0px #e0a558;
+   top: 5px;
+   left: -5px;
 }
 
 .form-container form p{
@@ -129,13 +134,13 @@
 }
 
 .form-container form p a{
-   color:crimson;
+   color:#e0a558;
 }
 
 .form-container form .error-msg{
    margin:10px 0;
    display: block;
-   background: crimson;
+   background: #e0a558;
    color:#fff;
    border-radius: 5px;
    font-size: 20px;
