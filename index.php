@@ -69,12 +69,13 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
                     <form action="app/edit.php" method="post">
                         <input type="hidden" name="edit_id" value="<?php echo $todo['id']; ?>" />
                         <input type="text" name="new_title" value="" />
-                        <button type="submit">Update</button>
                         <select name="new_status">
                             <option value="not_yet_started">Not Yet Started</option>
                             <option value="in_progress">In Progress</option>
                             <option value="finished">Finished</option>
                         </select>
+                        <button type="submit">Update</button>
+
                     </form>
                     <br>
                     <small>created: <?php echo $todo['date_time'] ?></small> 
@@ -143,6 +144,28 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
                 );
             });
         });
+
+        // Function to save the selected option to local storage
+        function saveSelectedOption() {
+            var selectElement = document.getElementsByName("new_status")[0];
+            var selectedValue = selectElement.value;
+            localStorage.setItem("selectedOption", selectedValue);
+        }
+
+        // Function to load the selected option from local storage
+        function loadSelectedOption() {
+            var selectElement = document.getElementsByName("new_status")[0];
+            var selectedValue = localStorage.getItem("selectedOption");
+            if (selectedValue) {
+                selectElement.value = selectedValue;
+            }
+        }
+
+        // Attach an event listener to the select element to save the selected option
+        document.getElementsByName("new_status")[0].addEventListener("change", saveSelectedOption);
+
+        // Load the selected option when the page loads
+        window.addEventListener("load", loadSelectedOption);
     </script>
 </body>
 </html>
