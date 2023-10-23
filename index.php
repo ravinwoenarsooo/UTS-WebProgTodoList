@@ -70,6 +70,11 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
                         <input type="hidden" name="edit_id" value="<?php echo $todo['id']; ?>" />
                         <input type="text" name="new_title" value="" />
                         <button type="submit">Update</button>
+                        <select name="new_status">
+                            <option value="not_yet_started">Not Yet Started</option>
+                            <option value="in_progress">In Progress</option>
+                            <option value="finished">Finished</option>
+                        </select>
                     </form>
                     <br>
                     <small>created: <?php echo $todo['date_time'] ?></small> 
