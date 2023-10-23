@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
 </head>
 <body>
     <div class="home-button-container" id="home">
-    <form action="index.php" method="get">
+    <form action="user_page.php" method="get">
         <button class="home-button" type="submit">Go to Home Page</button>
     </form>
     </div>

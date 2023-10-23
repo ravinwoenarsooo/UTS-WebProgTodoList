@@ -162,7 +162,7 @@ body {
 }
 
 .home-button:hover {
-    border: 2 px solid #ff96ad;
+    /* border: 8 px solid white; */
     color: white;
     background-color: crimson;
 } 
