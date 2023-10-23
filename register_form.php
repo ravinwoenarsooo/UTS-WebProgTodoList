@@ -42,7 +42,6 @@ if(isset($_POST['submit'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>register form</title>
 
-   <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -67,7 +66,7 @@ if(isset($_POST['submit'])){
          <option value="user">user</option>
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>already have an account? <a href="login_form.php">login now</a></p>
+      <p>Sudah punya akun? <a href="login_form.php">login now</a></p>
    </form>
 
 </div>

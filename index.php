@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
 <body>
     <div class="home-button-container" id="home">
         <form action="user_page.php" method="get">
-            <button class="home-button" type="submit">Go to Home Page</button>
+            <button class="home-button" type="submit">Kembali ke Home Page</button>
         </form>
     </div>
     <div class="main-section">
@@ -105,20 +105,18 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
             });
             
         $("form[action='app/edit.php']").submit(function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault();
 
             const form = $(this);
             const editId = form.find("input[name='edit_id']").val();
             const newTitle = form.find("input[name='new_title']").val();
 
-            // Send an AJAX request to edit.php with the updated title
             $.post("app/edit.php", {
                 edit_id: editId,
                 new_title: newTitle,
                 update_todo: true
             }, function(data) {
                 if (data === 'success') {
-                    // Reload the page to reflect the updated to-do list
                     window.location.reload();
                 }
             });
@@ -145,14 +143,12 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
             });
         });
 
-        // Function to save the selected option to local storage
         function saveSelectedOption() {
             var selectElement = document.getElementsByName("new_status")[0];
             var selectedValue = selectElement.value;
             localStorage.setItem("selectedOption", selectedValue);
         }
 
-        // Function to load the selected option from local storage
         function loadSelectedOption() {
             var selectElement = document.getElementsByName("new_status")[0];
             var selectedValue = localStorage.getItem("selectedOption");
@@ -161,10 +157,8 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
             }
         }
 
-        // Attach an event listener to the select element to save the selected option
         document.getElementsByName("new_status")[0].addEventListener("change", saveSelectedOption);
 
-        // Load the selected option when the page loads
         window.addEventListener("load", loadSelectedOption);
     </script>
 </body>

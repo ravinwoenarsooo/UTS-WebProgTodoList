@@ -111,7 +111,7 @@
 
 .form-container form .form-btn{
    background: #f7e3c8;
-   color:#e0a558;
+   color:#5e3703;
    text-transform: capitalize;
    font-size: 20px;
    cursor: pointer;
@@ -119,9 +119,6 @@
 }
 
 .form-container form .form-btn:hover{
-   /* border: 2px solid #ff96ad;
-   color: #ff96ad;
-   background-color: #17181c; */
    box-shadow: 10px 10px 0px #e0a558;
    top: 5px;
    left: -5px;
@@ -134,7 +131,7 @@
 }
 
 .form-container form p a{
-   color:#e0a558;
+   color:#5e3703;
 }
 
 .form-container form .error-msg{
