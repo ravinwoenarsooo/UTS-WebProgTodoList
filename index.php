@@ -81,7 +81,13 @@ if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated'])
                     <small>created: <?php echo $todo['date_time'] ?></small> 
                 </div>
             <?php } ?>
-
+            <ul>
+            <?php if (isset($_SESSION['tasks']) && !empty($_SESSION['tasks'])): ?>
+                <?php foreach ($_SESSION['tasks'] as $task): ?>
+                    <li><?= $task; ?></li>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </ul>
         </div>
     </div>
 
